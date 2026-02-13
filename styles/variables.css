@@ -1,5 +1,7 @@
 :root{
   --main-font: 'Inter-Variable';
+  --main-font-weight: 410;
+  --card-font-weight: 715;
   --acsent-font: 'PressStart2P';
   --cart-text-weight: 410;
   --card-title-text-weight: 715;

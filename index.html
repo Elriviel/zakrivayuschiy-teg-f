@@ -12,15 +12,14 @@
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
-    <link rel="favicon" href="" />
     <script src="./scripts/like.js" defer></script>
   </head>
   <body class="page">
     <header class="header">
       <div class="header-block">
         <div class="text-header-block">
-          <h1 class="header-title">&lt/HTML&gt</h1>
-          <h2 class="header-title-small">закрывающий тег</h2>
+          <span class="header-title">&lt;/HTML&gt;</span>
+          <h1 class="header-title-small">закрывающий тег</h2>
         </div>
       </div>
     </header>
@@ -83,8 +82,8 @@
                 />
               </svg>
             </button>
-            <button type="button" class="card__like-button button-shadow">
-              <p class="button__text">Like</p>
+            <button type="button" class="card__like-button button-shadow interaction-buttons button-scale">
+              <span class="button__text">Like</span>
             </button>
           </div>
         </div>
@@ -92,7 +91,7 @@
       <article class="card">
         <h2 class="card-title">1 спринт: Я — чистый лист</h2>
         <div class="image-wrapper">
-          <img src="./images/clear.jpg" alt="машинка" class="card-img clear" />
+          <img src="./images/clear.jpg" alt="белый лист бумаги с надписью, я не готов, но я начал" class="card-img clear" />
           <p class="label">Интерес</p>
         </div>
         <div class="about-card">
@@ -144,8 +143,8 @@
                 />
               </svg>
             </button>
-            <button type="button" class="card__like-button button-shadow">
-              <p class="button__text">Like</p>
+            <button type="button" class="card__like-button button-shadow interaction-buttons button-scale">
+              <span class="button__text">Like</span>
             </button>
           </div>
         </div>
@@ -155,7 +154,7 @@
         <div class="image-wrapper">
           <img
             src="./images/thoughts.jpg"
-            alt="машинка"
+            alt="мысли перед сном"
             class="card-img thoughts"
           />
           <p class="label">Вдохновение</p>
@@ -206,8 +205,8 @@
                 />
               </svg>
             </button>
-            <button type="button" class="card__like-button button-shadow">
-              <p class="button__text">Like</p>
+            <button type="button" class="card__like-button button-shadow interaction-buttons button-scale">
+              <span class="button__text">Like</span>
             </button>
           </div>
         </div>
@@ -217,7 +216,7 @@
         <div class="image-wrapper">
           <img
             src="./images/perfect.jpg"
-            alt="машинка"
+            alt="идеально разложенные хлопья в тарелке"
             class="card-img perfect"
           />
           <p class="label">Перфекционизм</p>
@@ -270,8 +269,8 @@
                 />
               </svg>
             </button>
-            <button type="button" class="card__like-button button-shadow">
-              <p class="button__text">Like</p>
+            <button type="button" class="card__like-button button-shadow interaction-buttons button-scale">
+              <span class="button__text">Like</span>
             </button>
           </div>
         </div>
@@ -279,7 +278,7 @@
       <article class="card">
         <h2 class="card-title">2 спринт: О тех, кто рядом</h2>
         <div class="image-wrapper">
-          <img src="./images/love.jpg" alt="машинка" class="card-img love" />
+          <img src="./images/love.jpg" alt="влюбленная пара ночью на крыше здания" class="card-img love" />
           <p class="label">Планы</p>
         </div>
         <div class="about-card">
@@ -332,8 +331,8 @@
                 />
               </svg>
             </button>
-            <button type="button" class="card__like-button button-shadow">
-              <p class="button__text">Like</p>
+            <button type="button" class="card__like-button button-shadow interaction-buttons button-scale">
+              <span class="button__text">Like</span>
             </button>
           </div>
         </div>
@@ -343,7 +342,7 @@
         <div class="image-wrapper">
           <img
             src="./images/pointer.jpg"
-            alt="машинка"
+            alt="много указателей на 1 столбе"
             class="card-img pointer"
           />
           <p class="label">Интерес</p>
@@ -394,8 +393,8 @@
                 />
               </svg>
             </button>
-            <button type="button" class="card__like-button button-shadow">
-              <p class="button__text">Like</p>
+            <button type="button" class="card__like-button button-shadow interaction-buttons button-scale">
+              <span class="button__text">Like</span>
             </button>
           </div>
         </div>
@@ -403,7 +402,7 @@
       <article class="card">
         <h2 class="card-title">3 спринт: Когда опускаются руки</h2>
         <div class="image-wrapper">
-          <img src="./images/hands.jpg" alt="машинка" class="card-img hands" />
+          <img src="./images/hands.jpg" alt="руки тянуться друг к другу на фоне луны" class="card-img hands" />
           <p class="label">Дисциплина</p>
         </div>
         <div class="about-card">
@@ -456,8 +455,8 @@
                 />
               </svg>
             </button>
-            <button type="button" class="card__like-button button-shadow">
-              <p class="button__text">Like</p>
+            <button type="button" class="card__like-button button-shadow interaction-buttons button-scale">
+              <span class="button__text">Like</span>
             </button>
           </div>
         </div>
@@ -465,7 +464,7 @@
       <article class="card">
         <h2 class="card-title">«Сейчас я здесь»</h2>
         <div class="image-wrapper">
-          <img src="./images/road.jpg" alt="машинка" class="card-img road" />
+          <img src="./images/road.jpg" alt="дорога в даль" class="card-img road" />
           <p class="label">Предвкушение</p>
         </div>
         <div class="about-card">
@@ -519,38 +518,46 @@
                 />
               </svg>
             </button>
-            <button type="button" class="card__like-button button-shadow">
-              <p class="button__text">Like</p>
+            <button type="button" class="card__like-button button-shadow interaction-buttons button-scale">
+              <span class="button__text">Like</span>
             </button>
           </div>
         </div>
       </article>
-    </main>
-    <footer class="footer">
-      <button
-        popovertarget="footer-popover"
-        class="footer-button button-shadow"
-      >
-        <svg viewBox="0 0 39 39" width="21" height="21" class="disk-logo">
-          <use href="./svg/disk.svg#disk"></use>
-        </svg>
-        <span class="button__text">Сохранить на память</span>
-      </button>
-      <div id="footer-popover" popover class="popup">
-        <div class="popover-text">
-          <svg viewBox="0 0 39 39" width="39" height="39" class="window-logo">
+      <div class="save">
+        <button
+          class="save-button button-shadow interaction-buttons button-scale"
+          type="button"
+          aria-haspopup="dialog"
+          aria-controls="main-dialog"
+          onclick="document.getElementById('main-dialog').showModal()"
+        >
+          <svg viewBox="0 0 39 39" width="21" height="21" class="disk-logo">
             <use href="./svg/disk.svg#disk"></use>
           </svg>
-          <p class="popover-button-text">Вставьте дискету, чтобы продолжить</p>
-        </div>
-        <button
-          popovertarget="footer-popover"
-          popovertargetaction="hide"
-          class="popover-button button-shadow"
-        >
-          <span class="button__text">ОК</span>
+          <span class="button__text">Сохранить на память</span>
         </button>
+
+        <dialog id="main-dialog" class="popup">
+          <div class="popover-text">
+            <svg viewBox="0 0 39 39" width="39" height="39" class="window-logo">
+              <use href="./svg/disk.svg#disk"></use>
+            </svg>
+            <p class="popover-button-text">
+              Вставьте дискету, чтобы продолжить
+            </p>
+          </div>
+
+          <form method="dialog">
+            <button
+              class="popover-button button-shadow interaction-buttons button-scale"
+              type="submit"
+            >
+              <span class="button__text">ОК</span>
+            </button>
+          </form>
+        </dialog>
       </div>
-    </footer>
+    </main>
   </body>
 </html>

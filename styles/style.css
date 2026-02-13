@@ -33,7 +33,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
-  font-variation-settings: "wght" var(--main-font);
+  font-variation-settings: "wght" var(--main-font-weight);
   background-image:
     repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
     repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
@@ -56,7 +56,7 @@
 }
 
 .header-title {
-  font-family: var(--acsent-font), sans-serif;
+  font-family: var(--acsent-font), fantasy;
   font-weight: 400;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
 }
@@ -68,9 +68,10 @@
 }
 
 .header-title-small {
-  font-family: var(--acsent-font), sans-serif;
+  font-family: var(--acsent-font), fantasy;
   font-weight: 400;
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  text-transform: uppercase;
 }
 
 .main {
@@ -85,7 +86,7 @@
 }
 .card-title {
   background-color: white;
-  font-weight: 715;
+  font-variation-settings: 'wght' var(--card-font-weight);
   font-size: 18px;
   padding: 4px 10px 4px 10px;
 }
@@ -135,7 +136,7 @@
 }
 
 .label {
-  font-family: var(--acsent-font), sans-serif;
+  font-family: var(--acsent-font), fantasy;
   font-size: 14px;
   position: absolute;
   top: 25px;
@@ -143,7 +144,7 @@
   color: rgba(0, 0, 0, 1);
   opacity: 0.5;
   mix-blend-mode: hard-light;
-  text-shadow: 1px rgba(255, 255, 255, 1);
+  text-shadow: 0 0 1px rgba(255, 255, 255, 1);
 }
 
 @supports (
@@ -166,7 +167,8 @@
   font-weight: 410;
   font-size: 18px;
   margin: 0 25px 25px 25px;
-  padding-block-start: 25px;
+  padding-block-start: 28px;
+  line-height: 21px;
 }
 
 .buttons {
@@ -175,7 +177,7 @@
   align-items: center;
   margin-inline-end: 25px;
   padding-block-end: 25px;
-  gap: 7px;
+  gap: 4px;
 }
 
 .card__icon-button {
@@ -198,12 +200,8 @@
 }
 
 .card__like-button {
-  border: solid 2px rgba(0, 0, 0, 1);
   height: 38px;
   width: 130px;
-  font-family: var(--acsent-font), sans-serif;
-  font-size: 14px;
-  background-color: rgba(255, 255, 255, 1);
   padding: 0;
 }
 .disk-logo {
@@ -225,7 +223,7 @@
   box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 1);
 }
 
-.button-shadow::before {
+.button-scale::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -235,24 +233,23 @@
   transform-origin: left;
 }
 
-.button-shadow:hover::before {
+.button-scale:hover::before {
   transform: scaleX(1);
 }
 
-.footer {
+.save {
   display: grid;
   justify-content: center;
 }
-
-.footer-button {
-  margin-block-start: 50px;
+.interaction-buttons{
+  border: solid 2px rgba(0, 0, 0, 1);
+  font-family: var(--acsent-font), fantasy;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.save-button {
   min-height: 55px;
   min-width: 335px;
-  background-color: rgba(255, 255, 255, 1);
-  border: solid 2px rgba(0, 0, 0, 1);
-  font-family: var(--acsent-font), sans-serif;
-  font-size: 14px;
-  line-height: 90%;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -268,15 +265,12 @@
 .popover-button {
   min-width: 293px;
   min-height: 38px;
-  background-color: rgba(255, 255, 255, 1);
-  border: solid 2px rgba(0, 0, 0, 1);
   margin: 0 30px 30px 30px;
-  font-family: var(--acsent-font), sans-serif;
   font-size: 14px;
 }
 .popover-button-text {
   text-transform: uppercase;
-  font-family: var(--acsent-font), sans-serif;
+  font-family: var(--acsent-font), fantasy;
   font-size: 14px;
   max-width: 234px;
   line-height: 150%;
@@ -288,8 +282,12 @@
 }
 .popup {
   padding: 0;
+  background-color: rgba(255, 255, 255, 1);
 }
 
+#main-dialog::backdrop{
+  background-color: rgba(0, 0, 0, 0.8);
+}
 .contour {
   fill: var(--counter-fill);
   transition: fill 0.1s linear;
@@ -357,6 +355,7 @@
   .footer-button {
     flex-direction: column;
     padding: 17px 0 17px 0;
+    width: 306px
   }
   .disk-logo {
     width: 28px;
