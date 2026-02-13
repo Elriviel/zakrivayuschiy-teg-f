@@ -86,7 +86,7 @@
 }
 .card-title {
   background-color: white;
-  font-variation-settings: 'wght' var(--card-font-weight);
+  font-variation-settings: "wght" var(--card-font-weight);
   font-size: 18px;
   padding: 4px 10px 4px 10px;
 }
@@ -241,7 +241,7 @@
   display: grid;
   justify-content: center;
 }
-.interaction-buttons{
+.interaction-buttons {
   border: solid 2px rgba(0, 0, 0, 1);
   font-family: var(--acsent-font), fantasy;
   font-size: 14px;
@@ -285,7 +285,7 @@
   background-color: rgba(255, 255, 255, 1);
 }
 
-#main-dialog::backdrop{
+#main-dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.8);
 }
 .contour {
@@ -355,7 +355,7 @@
   .footer-button {
     flex-direction: column;
     padding: 17px 0 17px 0;
-    width: 306px
+    width: 306px;
   }
   .disk-logo {
     width: 28px;

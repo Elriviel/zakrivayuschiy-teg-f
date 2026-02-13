@@ -1,8 +1,8 @@
-:root{
-  --main-font: 'Inter-Variable';
+:root {
+  --main-font: "Inter-Variable";
   --main-font-weight: 410;
   --card-font-weight: 715;
-  --acsent-font: 'PressStart2P';
+  --acsent-font: "PressStart2P";
   --cart-text-weight: 410;
   --card-title-text-weight: 715;
   --block-width: clamp(375px, 260.625px + 30.5vw, 700px);
