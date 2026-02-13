@@ -1,1 +1,12 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root{
+  --main-font: 'Inter-Variable';
+  --acsent-font: 'PressStart2P';
+  --cart-text-weight: 410;
+  --card-title-text-weight: 715;
+  --block-width: clamp(375px, 260.625px + 30.5vw, 700px);
+  --counter-fill: black;
+  --animation-fill-color: red;
+  --sparks-color: red;
+  --main-body-fill: red;
+  --core-fill: white;
+}
