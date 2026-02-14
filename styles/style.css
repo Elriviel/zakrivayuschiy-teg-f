@@ -350,7 +350,7 @@
   transform-origin: center;
 }
 
-@media (width <=375px) {
+@media (width <=400px) {
   .footer-button {
     flex-direction: column;
     padding: 17px 0 17px 0;
@@ -375,9 +375,8 @@
     padding: 0;
   }
   .popover-button-text {
-    max-width: 200px;
+    width: 200px;
   }
-
   .save-button {
     height: 84px;
     width: 306px;
